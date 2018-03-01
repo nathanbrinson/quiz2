@@ -10,7 +10,11 @@
 #include<iomanip>
 #include<string>
 using namespace std;
-
+//!
+//! @file
+//!
+//! @param College takes a standard string s
+//!
 College::College(std::string s){
 	name = s;
 	head = NULL;
@@ -107,6 +111,9 @@ void College::add(course& c){
 	}
 }
 
+//!
+//! @return remove returns nothing
+//!
 void College::remove(std::string coursename){
 	node * previous;	
 	node * cursor;

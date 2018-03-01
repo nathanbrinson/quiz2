@@ -10,9 +10,17 @@
 #include<string>
 using namespace std;
 
+//!
+//! @file
+//!
+
 course::course(){
     hours = 0.0;
 }
+
+//!
+//! @param input takes an istream input referred to as ins
+//!
 
 void course::input(std::istream& ins){
     if(ins == cin){
@@ -52,6 +60,9 @@ void course::output(std::ostream& outs)const{
       }
 }
 
+//!
+//! @return get_number_grade returns a double indicating GPA
+//!
 
 double course::get_number_grade()const{
     if(grade == "A") return 4.0;

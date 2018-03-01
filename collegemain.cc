@@ -21,8 +21,17 @@
 
 using namespace std;
 
+//!
+//! @file
+//!
+
 // This function displays the menu and returns the user's choice
 int menu();
+
+//!
+//! @return main returns a 0 after either running through the program,or
+//!         failing to open the specified file.
+//!
 
 int main(){
     int choice;
@@ -100,6 +109,10 @@ int main(){
 
 return 0;
 }
+
+//!
+//! @param menu takes no parameters
+//!
 
 int menu(){
     int choice;
