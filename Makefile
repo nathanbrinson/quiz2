@@ -1,13 +1,13 @@
 CC=g++
-CFLAGS=-c -Wall
+CFLAGS=-c
 
-all: build doc
+all: build doczip doc clean
 
 build: myexe
 
-doc: doc
+doc: doc/html
 
-doc: *.cc *.h
+doc/html: *.cc *.h
 	doxygen Doxyfile
 
 myexe: collegemain.o college.o course.o
@@ -24,6 +24,7 @@ course.o: course.cc course.h
 
 clean:
 	-rm -f *.o myexe
-	-rm -rf doc doc
+	-rm -f *.txt
+	-rm -rf doc/html doc/latex
 doczip:
-	tar cvzf Quiz2Brinson.tar.gz .
+	tar cvzf Quiz2Brinson.tar.gz /home/nbrinson/quiz2/quiz2

@@ -1,0 +1,11 @@
+# Doxyfile 1.8.14
+
+#-----------------------------------------
+# Project related configuration options
+#-----------------------------------------
+
+PROJECT_NAME		= "Quiz 2"
+PROJECT_BRIEF	        = "CS3560 Make/Documentation Tools Quiz"
+OUTPUT_DIRECTORY	= doc
+QUIET			= yes
+WARN_IF_UNDOCUMENTED	= no
